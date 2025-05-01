@@ -20,4 +20,14 @@ python ./dynamic_population.py graph.gml --action [cascade|covid] --initiator m 
 --action [cascade|covid]
 - This either simulates a cascade effect through the network (e.g. information spread) or similuates the spread of the COVID-19 pandemic across the network
 --initiator m
-- We chose the initial node(s) from which the action will start.  
+- We chose the initial node(s) from which the action will start. We replace m with specific node indentifiers because these are seperated by commas
+--threshold q
+Set the threshold value q (e.g., between 0 and 1) of the cascade effect.
+--probability_of_infection p
+- We set the probability of infection p for the infections
+--probability_of_death q
+- Set the probability q of death while infected
+--lifespan l
+- We define the lifespan of l (e.g a number of time steps of days) of the rounds.
+--shelter s
+- We set the sheltering parameter s (e.g. a proportion or list of nodes that will be sheltered 
