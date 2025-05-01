@@ -9,4 +9,15 @@
 - Additionally, it extends the model to the to simulate the impacts of shelter-in-place measures and vaccinations.
 # Requirements 
 - This is the command to execute the Pyhton script called dynamic_population.py to simulate the spread of a phenomenon (e.g. a cascade or a pandemic) across a network.
-- This simulation will take account of various parameters such as the initiator, the spreading threshold, lifespan,  
+- This simulation will take account of various parameters such as the initiator, the spreading threshold, lifespan,  sheltering, and vaccination.
+- This assignment requires us to create a Python code that runs in a terminal. This program accepts optional parameters.
+- The command to execute the Python is shown in the following line:
+python ./dynamic_population.py graph.gml --action [cascade|covid] --initiator m --threshold q --probability_of_infection p --probability_of_death q --lifespan l --shelter s --vaccination r --plot --interactive
+# Description of Parameters 
+- This script dynamic_population.py must be located in the current directory.
+- This program must read the graph .gml file because that'll describe the main graph.
+- This program's output plots a resulting graph and the plots of understanding the behavior because it also ensures a robusting file handling mechanisms such as error checking, file existence validation and appropriate error messages.
+--action [cascade|covid]
+- This either simulates a cascade effect through the network (e.g. information spread) or similuates the spread of the COVID-19 pandemic across the network
+--initiator m
+- We chose the initial node(s) from which the action will start.  
