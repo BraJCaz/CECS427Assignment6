@@ -30,4 +30,10 @@ Set the threshold value q (e.g., between 0 and 1) of the cascade effect.
 --lifespan l
 - We define the lifespan of l (e.g a number of time steps of days) of the rounds.
 --shelter s
-- We set the sheltering parameter s (e.g. a proportion or list of nodes that will be sheltered 
+- We set the sheltering parameter s (e.g. a proportion or list of nodes that will be sheltered or protected from the infection)
+--vaccination r
+- We set the vaccination rate or proportion r (e.g. a number between 0 and 1) representing the proportion of the network that is already vaccinated
+--interactive
+- We plot the graph and the state of nodes every round.
+--plot
+-- We finally plot the number of new infections per day when the simulation completes 
