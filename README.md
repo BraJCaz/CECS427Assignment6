@@ -36,4 +36,11 @@ Set the threshold value q (e.g., between 0 and 1) of the cascade effect.
 --interactive
 - We plot the graph and the state of nodes every round.
 --plot
--- We finally plot the number of new infections per day when the simulation completes 
+-- We finally plot the number of new infections per day when the simulation completes
+- Test runs
+- When I test ran my cascade graph using this command i got this result:
+python ./dynamic_population.py graph.gml --action cascade --initiator 1,3,6 --threshold 0.33 --plot
+- My result was 6 total active nodes and my cascade finished in 3 steps.
+- When I rest ran my covid graph using this command i got this result
+python ./dynamic_population.py graph.gml --action covid --initiator 3,4 --probability_of_infection 0.05 --lifespan 15 --shelter 0.3 --vaccination 0.25 --plot
+- My result was initiators 3 and 4, probability of infecting at 0.05, it simulates 15-time steps (days) with 30 percent shelter in place and 25 percent of the population fully vaccinated. 
