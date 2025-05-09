@@ -13,7 +13,7 @@ def load_graph(file_name):
     Graph = nx.read_gml(file_name)
     return Graph
 
-# Step 2: Parse command-line arguments
+# Step 2: Parse command-line arguments and I double checked all of them based on professor's announcement
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("graph_file", help="Path to .gml file")
